@@ -1,0 +1,90 @@
+/* Add CSS here */
+
+:root{
+    --countdown: 4rem;
+    --colon: -6px;
+}
+
+body{
+    background-color: rgb(147, 217, 255);
+}
+
+#sunset{
+    position: relative;
+    display: block;
+    background:linear-gradient(to top, #040308, #AD4A28, #DD723C, #FC7001, #DCB697, #9BA5AE, #3E5879, #020B1A);
+    width: 900px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: white 10px solid;
+    filter: dropshadow(100px 100px 100px purple);
+}
+#sunset::after{
+    filter: dropshadow(100px 100px 100px purple);
+}
+#wrapper{
+    position: relative;
+    display: block;
+    background-image: url("images/beach.png");
+    background-size: cover;
+    width: 900px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 3;
+}
+#days{
+    display: inline-block;
+    margin-left: auto;
+    font-size: var(--countdown);
+}
+#hours{
+    display: inline-block;
+    margin-left: auto;
+    font-size: var(--countdown);
+}
+#hours::before{
+    content: ":";
+    position: relative;
+    top: var(--colon);
+}
+#minutes{
+    display: inline-block;
+    margin-left: auto;
+    font-size: var(--countdown);
+}
+#minutes::before{
+    content: ":";
+    position: relative;
+    top: var(--colon);
+}
+#seconds{
+    margin-top: 255px;
+    display: inline-block;
+    margin-left: auto;
+}
+#seconds:before{
+    content: ":";
+    font-size: var(--countdown);
+    background-color: transparent;
+    position: relative;
+    margin-right: 2px;
+    top: var(--colon);
+}
+.countdown{
+    font-size: var(--countdown);
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 10px;
+    padding: 0px 12px;
+}
+.santa{
+    display: block;
+    position: absolute;
+    top: -90px;
+    right: 0px;
+    width: 450px;
+    margin-bottom: 300px;
+}
