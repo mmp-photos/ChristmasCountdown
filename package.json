@@ -1,0 +1,11 @@
+{
+  "name": "christmascountdown",
+  "version": "1.0.0",
+  "description": "Front End Design based on iCodeThis prompt",
+  "main": "index.html",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "",
+  "license": "ISC"
+}

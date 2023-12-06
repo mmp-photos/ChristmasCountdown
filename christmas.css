@@ -58,6 +58,7 @@ body{
 }
 #minutes::before{
     content: ":";
+    color: var(--white);
     position: relative;
     top: var(--colon);
 }
@@ -69,7 +70,7 @@ body{
 #seconds:before{
     content: ":";
     font-size: var(--countdown);
-    background-color: transparent;
+    color: var(--white);
     position: relative;
     margin-right: 2px;
     top: var(--colon);
@@ -77,6 +78,7 @@ body{
 .countdown{
     font-size: var(--countdown);
     background-color: rgba(255, 255, 255, .4);
+    color: rgb(38, 195, 111);
     border-radius: 10px;
     padding: 0px 12px;
 }
